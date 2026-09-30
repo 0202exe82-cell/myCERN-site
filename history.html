@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History of CERN</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0b0e14;
+            color: #e6e6e6;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #1a3300, #2e6600);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #66cc00;
+        }
+        header h1 { font-size: 42px; letter-spacing: 2px; color: #fff; }
+        header p { color: #b3ff66; margin-top: 10px; font-size: 18px; }
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #b3ff66;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav a:hover { color: #ffffff; text-decoration: underline; }
+        nav a.active { color: #ffcc00; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        section {
+            background: #131a0e;
+            border-left: 4px solid #66cc00;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        h2 { color: #66cc00; margin-bottom: 15px; font-size: 26px; }
+        .highlight { color: #ffcc00; font-weight: bold; }
+
+        /* Timeline styles */
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 30px;
+            border-left: 2px solid #66cc00;
+        }
+        .event {
+            position: relative;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            background: rgba(102, 204, 0, 0.08);
+            border-radius: 6px;
+        }
+        .event::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 20px;
+            width: 14px;
+            height: 14px;
+            background: #66cc00;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #66cc00;
+        }
+        .event .year {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .event .text { color: #e6e6e6; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>History of CERN</h1>
+        <p>From post-war cooperation to the discovery of the Higgs boson</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="antimatter.html">Antimatter</a>
+        <a href="history.html" class="active">History</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>How it all began</h2>
+            <p>
+                CERN was founded in the aftermath of World War II, when a group of visionary
+                scientists and politicians wanted to rebuild European science and promote
+                peaceful cooperation between nations. The name <span class="highlight">CERN</span>
+                comes from the French "Conseil Européen pour la Recherche Nucléaire"
+                (European Council for Nuclear Research), established in 1952.
+            </p>
+            <p>
+                Two years later, in 1954, the organization was officially renamed and its
+                first laboratory was built near Geneva.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Milestones</h2>
+            <div class="timeline">
+
+                <div class="event">
+                    <span class="year">1954</span>
+                    <span class="text">CERN is officially founded by 12 European countries.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">1957</span>
+                    <span class="text">The Synchrocyclotron, CERN's first accelerator, begins operation.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">1983</span>
+                    <span class="text">Carlo Rubbia and Simon van der Meer discover the W and Z bosons — a major step toward the Standard Model.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">1989</span>
+                    <span class="text">Tim Berners-Lee invents the <span class="highlight">World Wide Web</span> at CERN to help scientists share information.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">2008</span>
+                    <span class="text">The <span class="highlight">Large Hadron Collider (LHC)</span> is switched on — the largest machine ever built by humans.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">2012</span>
+                    <span class="text">The <span class="highlight">Higgs boson</span> is discovered at CERN, confirming a 50-year-old theory and completing the Standard Model of particle physics.</span>
+                </div>
+
+                <div class="event">
+                    <span class="year">Today</span>
+                    <span class="text">CERN continues to push the boundaries of science, studying antimatter, dark matter, and the fundamental laws of the universe.</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Why History Matters</h2>
+            <p>
+                CERN is a unique example of international collaboration. Today it has
+                <span class="highlight">23 member states</span> and welcomes scientists from
+                over 100 countries. Its history shows how science can unite people across
+                borders, cultures, and generations.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 — Student Project | Topic: CERN &amp; Antimatter
+    </footer>
+
+</body>
+</html>

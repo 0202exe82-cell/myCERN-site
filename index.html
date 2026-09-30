@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CERN — European Organization for Nuclear Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0b0e14;
+            color: #e6e6e6;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #001b3d, #003366);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #00aaff;
+        }
+        header h1 { font-size: 42px; letter-spacing: 2px; color: #fff; }
+        header p { color: #7fd4ff; margin-top: 10px; font-size: 18px; }
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #7fd4ff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav a:hover { color: #ffffff; text-decoration: underline; }
+        nav a.active { color: #ffcc00; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        section {
+            background: #131a26;
+            border-left: 4px solid #00aaff;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        h2 { color: #00aaff; margin-bottom: 15px; font-size: 26px; }
+        ul { margin-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { color: #ffcc00; font-weight: bold; }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 20px rgba(0,170,255,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        .note {
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: rgba(255, 204, 0, 0.08);
+            border-left: 3px solid #ffcc00;
+            border-radius: 4px;
+            font-size: 15px;
+            color: #d8d8d8;
+        }
+        .note strong { color: #ffcc00; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CERN</h1>
+        <p>European Organization for Nuclear Research</p>
+        <p>Exploring the fundamental structure of the universe</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="antimatter.html">Antimatter</a>
+        <a href="history.html">History</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>What is CERN?</h2>
+            <p>
+                CERN is the world's largest particle physics laboratory, located near Geneva,
+                on the border between Switzerland and France. Founded in 1954, it brings together
+                thousands of scientists from more than 100 countries to study the basic
+                constituents of matter.
+            </p>
+        </section>
+
+        <section>
+            <h2>The Large Hadron Collider (LHC)</h2>
+            <p>
+                The LHC is the most powerful particle accelerator ever built. It is a
+                <span class="highlight">27-kilometre ring</span> of superconducting magnets
+                placed 100 metres underground. Protons are accelerated to almost the speed of
+                light and then collide, recreating conditions that existed just after the Big Bang.
+            </p>
+            <ul>
+                <li>Circumference: 27 km</li>
+                <li>Depth: 100 m underground</li>
+                <li>Operating temperature: -271.3 °C (colder than outer space)</li>
+                <li>Key discovery: the Higgs boson (2012)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why does it matter?</h2>
+            <p>
+                Research at CERN helps us understand dark matter, antimatter, and the origin
+                of the universe. It has also given the world the <span class="highlight">World Wide Web</span>,
+                invented at CERN in 1989 by Tim Berners-Lee.
+            </p>
+        </section>
+
+        <section>
+            <h2>Watch: Antimatter Explained</h2>
+            <p>
+                What would happen if you dropped just 0.125 grams of antimatter?
+                This documentary by Veritasium explores the science behind antimatter
+                storage and the real work being done at CERN.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/jjp3WC8Unj8" 
+                    title="What happens if you drop 0.125 grams of antimatter?"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="note">
+                🇷🇺 <strong>Note:</strong> This video is also available in Russian with subtitles
+                on the <strong>Vert Dider</strong> YouTube channel — a popular Russian project
+                that translates and dubs scientific videos.
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 — Student Project | Topic: CERN &amp; Antimatter
+    </footer>
+
+</body>
+</html>

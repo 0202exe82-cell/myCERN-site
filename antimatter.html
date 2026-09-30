@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antimatter Production at CERN</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0b0e14;
+            color: #e6e6e6;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #3d001b, #660033);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff0066;
+        }
+        header h1 { font-size: 42px; letter-spacing: 2px; color: #fff; }
+        header p { color: #ff99bb; margin-top: 10px; font-size: 18px; }
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ff99bb;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav a:hover { color: #ffffff; text-decoration: underline; }
+        nav a.active { color: #ffcc00; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        section {
+            background: #1a131a;
+            border-left: 4px solid #ff0066;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        h2 { color: #ff0066; margin-bottom: 15px; font-size: 26px; }
+        ul { margin-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { color: #ffcc00; font-weight: bold; }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 20px rgba(255,0,102,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        .note {
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: rgba(255, 204, 0, 0.08);
+            border-left: 3px solid #ffcc00;
+            border-radius: 4px;
+            font-size: 15px;
+            color: #d8d8d8;
+        }
+        .note strong { color: #ffcc00; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Antimatter</h1>
+        <p>Production and research at CERN</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="antimatter.html" class="active">Antimatter</a>
+        <a href="history.html">History</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>What is Antimatter?</h2>
+            <p>
+                Antimatter is the opposite of ordinary matter. Every particle has a
+                corresponding antiparticle with the same mass but opposite electric charge.
+                For example, the antiparticle of the electron is the <span class="highlight">positron</span>,
+                and the antiparticle of the proton is the <span class="highlight">antiproton</span>.
+            </p>
+            <p>
+                When matter and antimatter meet, they <span class="highlight">annihilate</span> —
+                they disappear and release a huge amount of pure energy according to
+                Einstein's equation E = mc².
+            </p>
+        </section>
+
+        <section>
+            <h2>How is Antimatter Made?</h2>
+            <p>
+                At CERN, antimatter is produced in particle accelerators. The process
+                is extremely complex and inefficient:
+            </p>
+            <ul>
+                <li>Protons are accelerated and smashed into a metal target.</li>
+                <li>The collisions create a spray of new particles, including antiprotons.</li>
+                <li>Antiprotons are captured and slowed down in a special decelerator called the <span class="highlight">Antiproton Decelerator (AD)</span>.</li>
+                <li>They are then combined with positrons to form <span class="highlight">antihydrogen</span> atoms.</li>
+            </ul>
+            <p>
+                CERN is the only place in the world where antihydrogen atoms can be
+                trapped and studied for long periods.
+            </p>
+        </section>
+
+        <section>
+            <h2>Why is it so difficult?</h2>
+            <ul>
+                <li>Antimatter annihilates instantly on contact with normal matter.</li>
+                <li>It must be stored in a perfect vacuum using magnetic traps.</li>
+                <li>Producing just 1 gram of antimatter would take billions of years and cost more than the entire world economy.</li>
+            </ul>
+            <p>
+                Despite these challenges, studying antimatter may help answer one of the
+                biggest mysteries of physics: <span class="highlight">why the universe is made
+                almost entirely of matter</span>, and not equal parts matter and antimatter.
+            </p>
+        </section>
+
+        <section>
+            <h2>Watch: The Story of Antimatter</h2>
+            <p>
+                How did physicists discover antimatter? This video by Veritasium tells the story
+                of Paul Dirac, the Dirac equation, and the strange prediction of an
+                <span class="highlight">anti-universe</span>.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/Y-W-w8yNiKU" 
+                    title="Why is there antimatter?"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="note">
+                🇷🇺 <strong>Note:</strong> This video is also available in Russian with subtitles
+                on the <strong>Vert Dider</strong> YouTube channel — a popular Russian project
+                that translates and dubs scientific videos.
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 — Student Project | Topic: CERN &amp; Antimatter
+    </footer>
+
+</body>
+</html>
